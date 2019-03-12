@@ -1,5 +1,5 @@
 # Bitcoin SV Docker Image
-Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node for use with [Planaria](https://docs.planaria.network/#/)
+Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node
 
 ## Table of Contents
 - [Installation](https://github.com/mrz1836/bitcoinsv-docker#installation)
@@ -8,9 +8,7 @@ Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node for use
 - [License](https://github.com/mrz1836/bitcoinsv-docker#license)
 
 ## Installation
-**Objective:** install a full [Bitcoin SV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com) for use with [Planaria](https://docs.planaria.network/#/)
-
-Read more about [Planaria](https://docs.planaria.network/#/) and [docker](https://docs.docker.com).
+**Objective:** install a full [Bitcoin SV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com)
 
 ### Install Docker via Homebrew (Mac)
 ```bash
