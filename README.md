@@ -15,13 +15,13 @@ $ docker login
 
 ## Install BitcoinSV
 
-(Optional)
+(Optional) Start with this repository
 ```
 $ git clone this-repo
 $ cd ~/this-repo
 ```
 
-Create a bsvd-data volume to persist the bsvd blockchain data, should exit immediately. The bsvd-data container will store the blockchain when the node container is recreated (software upgrade, reboot, etc):
+1) Create a bsvd-data volume to persist the bsvd blockchain data, should exit immediately. The bsvd-data container will store the blockchain when the node container is recreated (software upgrade, reboot, etc):
 ```bash
 $ docker volume create --name=bsvd-data
 ```
@@ -34,7 +34,7 @@ DRIVER              VOLUME NAME
 local               bsvd-data
 ```
 
-Build the docker image
+2) Build the docker image
 ```bash
 $ docker build --tag=bsv-node-image .
 ```
@@ -47,7 +47,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 bsv-node-image      latest              bea2961dbc29        47 seconds ago      112MB
 ```
 
-Run the docker image
+3) Run the docker image
 ```bash
 $ docker run -v bsvd-data:/bitcoinsv --name=bsvd-node-server -d \
       -p 8333:8333 \
