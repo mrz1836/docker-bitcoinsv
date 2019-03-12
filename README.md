@@ -17,6 +17,12 @@ Read more about [Planaria](https://docs.planaria.network/#/) and [docker](https:
 $ brew cask install docker
 ```
 
+_Install docker for Mac_
+```
+1) Open the docker application for your applications folder
+2) Finish the installation of the docker desktop application
+```
+
 _Login to docker_
 ```bash
 $ docker login
@@ -74,16 +80,19 @@ _Connect to the docker instance_
 $ docker exec -it bsvd-node-server /bin/bash
 ```
 
-Test if bitcoin node is working properly (view the connections active logs)
+_Test: Are there are node connections?_
 ```bash
-root@zfr2961dbc55:~# bitcoin-cli getblockchaininfo
 root@zfr2961dbc55:~# bitcoin-cli getconnectioncount
-root@zfr2961dbc55:~# tail -f ~/.bitcoin/bitcoind.log
 ```
 
-_Stop the server_
+_Test: Is there blockchain info?_
 ```bash
-$ docker stop bsvd-node-server
+root@zfr2961dbc55:~# bitcoin-cli getblockchaininfo
+```
+
+_Test: Are there logs?_
+```bash
+root@zfr2961dbc55:~# tail -f ~/.bitcoin/bitcoind.log
 ```
 
 ## Maintainers
