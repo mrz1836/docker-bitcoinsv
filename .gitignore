@@ -1,0 +1,6 @@
+.idea
+aws.env
+envs.txt
+codeship.aes
+.DS_store
+.dbthumb

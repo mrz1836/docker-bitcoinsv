@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -ex
+
+echo "Installation Complete!"
+
+if [ $# -gt 0 ]; then
+    args=("$@")
+fi
+
+exec bitcoind "${args[@]}"
