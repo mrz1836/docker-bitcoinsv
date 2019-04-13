@@ -70,7 +70,7 @@ $ docker run -v bsvd-data:/bitcoinsv --name=bsvd-node-server -d \
 
 _Check that the container exists_
 ```bash
-$ docker containers ls -a
+$ docker container ls -a
 ```
 
 _Connect to the docker instance_
