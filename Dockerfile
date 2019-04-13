@@ -28,7 +28,7 @@ RUN chmod +x /usr/local/bin/bsv_oneshot
 VOLUME ["/bitcoinsv"]
 
 # Expose the ports for use
-EXPOSE 8432 8433
+EXPOSE 8332 8333
 
 # Set the working directory
 WORKDIR /bitcoinsv
