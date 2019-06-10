@@ -2,10 +2,10 @@
 Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node
 
 ## Table of Contents
-- [Installation](https://github.com/mrz1836/bitcoinsv-docker#installation)
-- [Maintainers](https://github.com/mrz1836/bitcoinsv-docker#maintainers)
-- [Contributing](https://github.com/mrz1836/bitcoinsv-docker#contributing)
-- [License](https://github.com/mrz1836/bitcoinsv-docker#license)
+- [Installation](#installation)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 **Objective:** install a full [Bitcoin SV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com)
@@ -96,11 +96,11 @@ root@zfr2961dbc55:~# tail -f ~/.bitcoin/bitcoind.log
 ## Maintainers
 Forked from: [docker-bitcoinsv](https://github.com/BitslerCasino/docker-bitcoinsv)
 
-[MrZ](https://github.com/mrz1836) - [Satchmo](https://github.com/rohenaz)
+[@MrZ1836](https://github.com/mrz1836) - [@Satchmo](https://github.com/rohenaz)
 
 Support the development of this project and the development team 🙏
 
-[![Donate](https://img.shields.io/badge/donate-bitcoin%20SV-brightgreen.svg)](https://mrz1818.com?af=docker-bitcoinsv)
+[![Donate](https://img.shields.io/badge/donate-bitcoin-brightgreen.svg)](https://mrz1818.com?af=docker-bitcoinsv)
 
 ## Contributing
 Feel free to dive in! [Open an issue](https://github.com/mrz1836/docker-bitcoinsv/issues/new) or submit PRs.
