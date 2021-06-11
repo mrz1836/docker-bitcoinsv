@@ -1,7 +1,7 @@
 # Bitcoin SV Docker Image
 > Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node
 
-[![BSV Version](https://img.shields.io/badge/BSV-1.0.7-blue.svg)](https://download.bitcoinsv.io/bitcoinsv/1.0.7/)
+[![BSV Version](https://img.shields.io/badge/BSV-1.0.8-blue.svg)](https://download.bitcoinsv.io/bitcoinsv/1.0.8/)
 [![Docker Version](https://img.shields.io/badge/Docker-18.0.xx-blue.svg)](https://docs.docker.com/release-notes/)
 
 ## Table of Contents
