@@ -1,8 +1,11 @@
-# Bitcoin SV Docker Image
-> Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node
+# BitcoinSV Docker Image
+> Optimized [docker](https://docs.docker.com) image of the [BitcoinSV](https://bitcoinsv.io) node
 
-[![BSV Version](https://img.shields.io/badge/BSV-1.0.8.beta-blue.svg)](https://download.bitcoinsv.io/bitcoinsv/1.0.8.beta/)
-[![Docker Version](https://img.shields.io/badge/Docker-18.0.xx-blue.svg)](https://docs.docker.com/release-notes/)
+[![last commit](https://img.shields.io/github/last-commit/mrz1836/docker-bitcoinsv.svg?style=flat&v=1)](https://github.com/mrz1836/docker-bitcoinsv/commits/master)
+[![version](https://img.shields.io/github/release-pre/mrz1836/docker-bitcoinsv.svg?style=flat&v=1)](https://github.com/mrz1836/docker-bitcoinsv/releases)
+[![BSV Version](https://img.shields.io/badge/BSV-1.0.8.beta-blue.svg?v=1)](https://download.bitcoinsv.io/bitcoinsv/1.0.8.beta/)
+[![Docker Version](https://img.shields.io/badge/Docker-18.0.xx-blue.svg?v=1)](https://docs.docker.com/release-notes/)
+[![Sponsor](https://img.shields.io/badge/sponsor-MrZ1836-181717.svg?logo=github&style=flat&v=1)](https://github.com/sponsors/Mrz1836)
 
 ## Table of Contents
 - [Installation](#installation)
@@ -15,7 +18,7 @@
 <br/>
 
 ## Installation
-**Objective:** install a full [Bitcoin SV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com)
+**Objective:** install a full [BitcoinSV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com)
 
 ### Install Docker via Homebrew (Mac)
 ```shell script
