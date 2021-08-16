@@ -1,15 +1,18 @@
 # Bitcoin SV Docker Image
 > Optimized [docker](https://docs.docker.com) image of the Bitcoin SV node
 
-[![BSV Version](https://img.shields.io/badge/BSV-1.0.8-blue.svg)](https://download.bitcoinsv.io/bitcoinsv/1.0.8/)
+[![BSV Version](https://img.shields.io/badge/BSV-1.0.8.beta-blue.svg)](https://download.bitcoinsv.io/bitcoinsv/1.0.8.beta/)
 [![Docker Version](https://img.shields.io/badge/Docker-18.0.xx-blue.svg)](https://docs.docker.com/release-notes/)
 
 ## Table of Contents
 - [Installation](#installation)
+- [Documentation](#documentation)
 - [Maintainers](#maintainers)
 - [Credits](#credits)
 - [Contributing](#contributing)
 - [License](#license)
+
+<br/>
 
 ## Installation
 **Objective:** install a full [Bitcoin SV node](https://download.bitcoinsv.io/bitcoinsv/) using [docker](https://docs.docker.com)
@@ -98,20 +101,66 @@ _Test: Are there logs?_
 root@zfr2961dbc55:~# tail -f ~/.bitcoin/bitcoind.log
 ```
 
+<br/>
+
+## Documentation
+
+<details>
+<summary><strong><code>Makefile Commands</code></strong></summary>
+
+View all `makefile` commands
+
+```shell script
+make help
+```
+
+List of all current commands:
+
+```text
+build                Builds the docker image
+help                 Show this help message
+release              Full production release (creates release in Github)
+release-snap         Test the full release (build binaries)
+release-test         Full production test release (everything except deploy)
+replace-version      Replaces the version in HTML/JS (pre-deploy)
+run                  Runs the docker container
+tag                  Generate a new tag and push (tag version=0.0.0)
+tag-remove           Remove a tag if found (tag-remove version=0.0.0)
+tag-update           Update an existing tag to current commit (tag-update version=0.0.0)
+```
+
+</details>
+
+<br/> 
+
 ## Maintainers
 | [<img src="https://github.com/mrz1836.png" height="50" alt="MrZ" />](https://github.com/mrz1836) | [<img src="https://github.com/rohenaz.png" height="50" alt="Satchmo" />](https://github.com/rohenaz)
 |:---:|:---:|
-| [MrZ](https://github.com/mrz1836) | [Satchmo](https://github.com/rohenaz) 
+| [MrZ](https://github.com/mrz1836) | [Satchmo](https://github.com/rohenaz) |
  
 Support the development of this project and the development team 🙏
 
 [![Donate](https://img.shields.io/badge/donate-bitcoin-brightgreen.svg)](https://mrz1818.com?af=docker-bitcoinsv)
 
+<br/>
+
 ## Credits
 Inspiration and some code from: [docker-bitcoinsv](https://github.com/BitslerCasino/docker-bitcoinsv)
 
+<br/>
+
 ## Contributing
-Feel free to dive in! [Open an issue](https://github.com/mrz1836/docker-bitcoinsv/issues/new) or submit PRs.
+View the [contributing guidelines](CONTRIBUTING.md) and please follow the [code of conduct](CODE_OF_CONDUCT.md).
+
+### How can I help?
+All kinds of contributions are welcome :raised_hands:!
+The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:.
+You can also support this project by [becoming a sponsor on GitHub](https://github.com/sponsors/Mrz1836) :clap:
+or by making a [**bitcoin donation**](https://mrz1818.com/?utm_source=github&utm_medium=sponsor-link&utm_campaign=docker-bitcoinsv&utm_term=docker-bitcoinsv&utm_content=docker-bitcoinsv) to ensure this journey continues indefinitely! :rocket:
+
+[![Stars](https://img.shields.io/github/stars/mrz1836/docker-bitcoinsv?label=Please%20like%20us&style=social)](https://github.com/mrz1836/docker-bitcoinsv/stargazers)
+
+<br/>
 
 ## License
 ![License](https://img.shields.io/github/license/mrz1836/docker-bitcoinsv.svg?style=flat)
