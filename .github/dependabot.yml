@@ -1,0 +1,32 @@
+# Basic dependabot.yml to update gomod, Github Actions and Docker
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    target-branch: "master"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    reviewers:
+      - "mrz1836"
+    assignees:
+      - "mrz1836"
+    labels:
+      - "chore"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for Docker (if used)
+  - package-ecosystem: "docker"
+    target-branch: "master"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    reviewers:
+      - "mrz1836"
+    assignees:
+      - "mrz1836"
+    labels:
+      - "chore"
+    open-pull-requests-limit: 10
