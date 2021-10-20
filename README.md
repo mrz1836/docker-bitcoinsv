@@ -166,4 +166,4 @@ or by making a [**bitcoin donation**](https://mrz1818.com/?utm_source=github&utm
 <br/>
 
 ## License
-![License](https://img.shields.io/github/license/mrz1836/docker-bitcoinsv.svg?style=flat)
+[![License](https://img.shields.io/github/license/mrz1836/docker-bitcoinsv.svg?style=flat)](LICENSE)
