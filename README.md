@@ -3,7 +3,7 @@
 
 [![last commit](https://img.shields.io/github/last-commit/mrz1836/docker-bitcoinsv.svg?style=flat&v=1)](https://github.com/mrz1836/docker-bitcoinsv/commits/master)
 [![version](https://img.shields.io/github/release-pre/mrz1836/docker-bitcoinsv.svg?style=flat&v=1)](https://github.com/mrz1836/docker-bitcoinsv/releases)
-[![BSV Version](https://img.shields.io/badge/BSV-1.0.9-blue.svg?v=1)](https://download.bitcoinsv.io/bitcoinsv/1.0.9/)
+[![BSV Version](https://img.shields.io/badge/BSV-1.0.10-blue.svg?v=1)](https://download.bitcoinsv.io/bitcoinsv/1.0.9/)
 [![Docker Version](https://img.shields.io/badge/Docker-18.0.xx-blue.svg?v=1)](https://docs.docker.com/release-notes/)
 [![Sponsor](https://img.shields.io/badge/sponsor-MrZ1836-181717.svg?logo=github&style=flat&v=1)](https://github.com/sponsors/Mrz1836)
 
@@ -137,9 +137,9 @@ tag-update           Update an existing tag to current commit (tag-update versio
 <br/> 
 
 ## Maintainers
-| [<img src="https://github.com/mrz1836.png" height="50" alt="MrZ" />](https://github.com/mrz1836) | [<img src="https://github.com/rohenaz.png" height="50" alt="Satchmo" />](https://github.com/rohenaz)
-|:---:|:---:|
-| [MrZ](https://github.com/mrz1836) | [Satchmo](https://github.com/rohenaz) |
+| [<img src="https://github.com/mrz1836.png" height="50" alt="MrZ" />](https://github.com/mrz1836) | [<img src="https://github.com/rohenaz.png" height="50" alt="Satchmo" />](https://github.com/rohenaz) |
+|:------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------:|
+|                                [MrZ](https://github.com/mrz1836)                                 |                                [Satchmo](https://github.com/rohenaz)                                 |
  
 Support the development of this project and the development team 🙏
 
