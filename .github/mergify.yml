@@ -30,6 +30,10 @@ pull_request_rules:
   - name: Automatic Merge ⬇️ on Approval ✔
     conditions:
       - "#approved-reviews-by>=1"
+      - "#review-requested=0"
+      - "#changes-requested-reviews-by=0"
+      - -title~=(?i)wip
+      - label!=work-in-progress
       - -draft
     actions:
       merge:
@@ -85,12 +89,20 @@ pull_request_rules:
   # - chore:     updating grunt tasks etc.; no production code change
   # - docs:      changes to the documentation
   # - feat:      feature or story
-  # - feat:      new feature for the user, not a new feature for build script
+  # - feature:   new feature or story
   # - fix:       bug fix for the user, not a fix to a build script
   # - idea:      general idea or suggestion
+  # - question:  question regarding code
   # - test:      test related changes
+  # - wip:       work in progress PR
   # ===============================================================================
 
+  - name: Work in Progress
+    conditions:
+      - "head~=(?i)^wip" # if the PR branch starts with wip/
+    actions:
+      label:
+        add: ["work-in-progress"]
   - name: Hotfix label
     conditions:
       - "head~=(?i)^hotfix" # if the PR branch starts with hotfix/
@@ -102,13 +114,13 @@ pull_request_rules:
       - "head~=(?i)^(bug)?fix" # if the PR branch starts with (bug)?fix/
     actions:
       label:
-        add: [ "bug-P3" ]
+        add: ["bug-P3"]
   - name: Documentation label
     conditions:
       - "head~=(?i)^docs" # if the PR branch starts with docs/
     actions:
       label:
-        add: [ "documentation" ]
+        add: ["documentation"]
   - name: Feature label
     conditions:
       - "head~=(?i)^feat(ure)?" # if the PR branch starts with feat(ure)?/
@@ -154,8 +166,8 @@ pull_request_rules:
         - author!=afomi
     actions:
       comment:
-        message: |
-          Welcome to our open-source project! We're delighted to have you onboard 💘
+        message: "Welcome to our open-source project @{{author}}! 💘"
+
 
   # ===============================================================================
   # STALE BRANCHES
@@ -170,6 +182,8 @@ pull_request_rules:
       close:
         message: |
           This pull request looks stale. Feel free to reopen it if you think it's a mistake.
+      label:
+        add: ["stale"]
 
   # ===============================================================================
   # BRANCHES
