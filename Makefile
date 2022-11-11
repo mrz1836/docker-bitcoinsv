@@ -21,11 +21,11 @@ ifndef REPO_BRANCH
 	override REPO_BRANCH="master"
 endif
 
-.PHONY: clean release test
-
+.PHONY: build
 build: ## Builds the docker image
 	@docker build --tag=bsv-node-image .
 
+.PHONY: run
 run: ## Runs the docker container
 	@docker run -v bsvd-data:/bitcoinsv --name=bsvd-node-server -d \
 		-p 8333:8333 \
