@@ -1,5 +1,5 @@
-# Stable slim version of debian linux
-FROM debian:stretch-slim
+# Stable bullseye version of debian linux
+FROM debian:bullseye
 
 # Set the home directory
 ENV HOME /bitcoinsv
