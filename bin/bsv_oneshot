@@ -8,4 +8,4 @@ if [ $# -gt 0 ]; then
     args=("$@")
 fi
 
-exec bitcoind -excessiveblocksize=1000000000 -maxstackmemoryusageconsensus=100000000 "${args[@]}"
+exec bitcoind -excessiveblocksize=1000000000 -maxstackmemoryusageconsensus=100000000 -minminingtxfee=0.00000500 "${args[@]}"
